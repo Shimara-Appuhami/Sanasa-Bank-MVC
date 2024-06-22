@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1300.0" style="-fx-background-color: #BBE2EC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.BalanceFormController">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="1300.0" layoutX="-9.0">
+         <image>
+            <Image url="@../image/gradient-white-monochrome-background_23-2149001474.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="498.0" layoutY="28.0" prefHeight="30.0" prefWidth="145.0" text="Balance Form" textFill="#313738">
+         <font>
+            <Font name="Cambria Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="292.0" prefHeight="30.0" prefWidth="75.0" text="Balance ID">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="408.0" prefHeight="30.0" prefWidth="105.0" text="Principal Balance">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="456.0" layoutY="470.0" prefHeight="30.0" prefWidth="98.0" text="Interest Balance">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+
+      <Line endX="51.4000244140625" endY="7.62939453125E-6" layoutX="594.0" layoutY="64.0" startX="-100.0" stroke="#313738" strokeWidth="5.0" />
+      <TableView fx:id="tblBalance" layoutX="62.0" layoutY="427.0" opacity="0.0" prefHeight="86.0" prefWidth="118.0">
+         <columns>
+            <TableColumn fx:id="colBalanceId" minWidth="0.0" prefWidth="0.0" text="Balance ID" />
+            <TableColumn fx:id="colNic" prefWidth="194.4000244140625" text="NIC" />
+            <TableColumn fx:id="colPrincipalBalance" prefWidth="138.39996337890625" text="Principal Balance" />
+            <TableColumn fx:id="colInterestBalance" prefWidth="110.39996337890625" text="Interest Balance" />
+            <TableColumn fx:id="colTotalBalance" prefWidth="102.40008544921875" text="Total Balance" />
+            <TableColumn fx:id="colLastUpdatedDate" prefWidth="122.4000244140625" text="Last Updated Date" />
+         </columns>
+      </TableView>
+
+      <Label layoutX="457.0" layoutY="535.0" prefHeight="30.0" prefWidth="97.0" text="Total Balance">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBalanceId" layoutX="592.0" layoutY="294.0" onAction="#txtBalanceIdOnAction" onKeyReleased="#txtBalanceIdOnKeyReleased" promptText="B0X" style="-fx-border-color: white;" />
+      <TextField fx:id="txtPrincipalBalance" layoutX="592.0" layoutY="408.0" onAction="#txtPrincipalBalanceOnAction" promptText="principal balance" style="-fx-border-color: white;" />
+      <TextField fx:id="txtInterestBalance" layoutX="592.0" layoutY="473.0" onAction="#txtInterestBalanceOnAction" promptText="interest balance" style="-fx-border-color: white;" />
+      <TextField fx:id="txtTotalBalance" layoutX="592.0" layoutY="538.0" onAction="#txtTotalBalanceOnAction" promptText="total balance " style="-fx-border-color: white;" />
+
+      <Label layoutX="455.0" layoutY="607.0" prefHeight="30.0" prefWidth="118.0" text="Last Updated Date">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+
+      <JFXButton buttonType="RAISED" layoutX="1024.0" layoutY="607.0" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #30336b; -fx-text-fill: white; -fx-border-color: #30336b;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <DatePicker fx:id="txtLastUpdatedDate" layoutX="591.0" layoutY="609.0" onAction="#txtLastUpdatedDateOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-border-color: white;" />
+      <Label layoutX="116.0" layoutY="163.0" prefHeight="30.0" prefWidth="118.0" text="Enter your NIC ">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNic" layoutX="249.0" layoutY="165.0" onAction="#txtSearchOnAction" opacity="0.8" promptText="XXXXXXXXXXXX" style="-fx-border-color: red;" />
+      <Label layoutX="455.0" layoutY="346.0" prefHeight="30.0" prefWidth="75.0" text="Loan ID">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLoanId" layoutX="592.0" layoutY="348.0" onAction="#txtLoanIdOnAction" onKeyReleased="#txtBalanceIdOnKeyReleased" promptText="B0X" style="-fx-border-color: white;" />
+      <JFXButton buttonType="RAISED" layoutX="904.0" layoutY="607.0" onAction="#btnPrintOnAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #f53b57; -fx-text-fill: white; -fx-border-color: #f53b57;" text="Print">
+         <font>
+            <Font name="Cambria Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

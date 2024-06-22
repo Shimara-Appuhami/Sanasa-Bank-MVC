@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="417.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0">
+         <image>
+            <Image url="@../image/pngtree-abstract-vector-background-blue-water-png-image_4645542.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="237.0" layoutY="46.0" prefHeight="30.0" prefWidth="174.0" text="Customer Form">
+         <font>
+            <Font name="Cambria Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="113.0" prefHeight="30.0" prefWidth="75.0" text="Name">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="145.0" prefHeight="30.0" prefWidth="86.0" text="Email">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="175.0" prefHeight="30.0" prefWidth="85.0" text="Contact">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="208.0" prefHeight="30.0" prefWidth="97.0" text="Address">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="194.0" layoutY="115.0" onAction="#txtSearchOnAction" promptText="name" />
+      <TextField fx:id="txtEmail" layoutX="194.0" layoutY="147.0" onAction="#txtEmailOnAction" promptText="email" />
+      <TextField fx:id="txtContact" layoutX="194.0" layoutY="177.0" onAction="#txtContactOnAction" promptText="contact" />
+      <TextField fx:id="txtAddress" layoutX="194.0" layoutY="210.0" onAction="#txtAddressOnAction" promptText="address" />
+      <TableView fx:id="tblCustomer" layoutX="3.0" layoutY="304.0" prefHeight="86.0" prefWidth="705.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="63.999996185302734" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="72.80001831054688" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="69.5999755859375" text="Email" />
+            <TableColumn fx:id="colContact" prefWidth="83.20002746582031" text="Contact" />
+            <TableColumn fx:id="colAddress" prefWidth="83.20001220703125" text="Address" />
+            <TableColumn fx:id="colAge" prefWidth="38.40008544921875" text="Age" />
+            <TableColumn fx:id="colBirth" text="Date of Birth" />
+            <TableColumn fx:id="colRegistration" prefWidth="69.5999755859375" text="Regisration Date" />
+            <TableColumn fx:id="colIncome" prefWidth="69.5999755859375" text="Annual Income" />
+            <TableColumn fx:id="colInquiryId" prefWidth="83.20001220703125" text="Inquiry ID" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="362.0" layoutY="391.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="55.0" text="Clear" />
+      <JFXButton layoutX="434.0" layoutY="391.0" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="55.0" text="Save" />
+      <JFXButton layoutX="507.0" layoutY="391.0" onAction="#btnUpdateOnAction" text="Update" />
+      <JFXButton layoutX="572.0" layoutY="391.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="55.0" text="Delete" />
+      <Label layoutX="83.0" layoutY="236.0" prefHeight="30.0" prefWidth="97.0" text="Age">
+         <JFXButton fx:id="btnBack" layoutX="24.0" layoutY="25.0" onAction="#btnBackOnAction" prefHeight="28.0" prefWidth="50.0" style="-fx-background-color: #CAD3C8;" text="Back">
+            <font>
+               <Font name="Cambria" size="14.0" />
+            </font>
+         </JFXButton>
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAge" layoutX="194.0" layoutY="238.0" onAction="#txtAgeOnAction" promptText="age" />
+      <Label layoutX="89.0" layoutY="84.0" prefHeight="30.0" prefWidth="75.0" text="ID">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="263.0" prefHeight="30.0" prefWidth="86.0" text="Date of Birth">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBirth" layoutX="194.0" layoutY="266.0" onAction="#txtBirthOnAction" promptText="date of birth" />
+      <TextField fx:id="txtId" layoutX="194.0" layoutY="86.0" onAction="#txtSearchOnAction" promptText="id" />
+      <Label layoutX="379.0" layoutY="144.0" prefHeight="30.0" prefWidth="75.0" text="Inquiry ID">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="113.0" prefHeight="30.0" prefWidth="75.0" text="Annual Income">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="83.0" prefHeight="30.0" prefWidth="75.0" text="Regisration Date">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRegistration" layoutX="460.0" layoutY="86.0" onAction="#txtRegistrationOnAction" promptText="registraion date" />
+      <TextField fx:id="txtIncome" layoutX="460.0" layoutY="115.0" onAction="#txtIncomeOnAction" promptText="annual income" />
+      <TextField fx:id="txtInquiryId" layoutX="460.0" layoutY="146.0" onAction="#txtInquiryIdOnAction" promptText="inquiry id" />
+   </children>
+</AnchorPane>

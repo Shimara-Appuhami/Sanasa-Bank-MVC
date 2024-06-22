@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PaymentDetailsReport" language="sql" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b43b178-be12-4348-976b-10bdb772a76e">
+	<queryString>
+		<![CDATA[SELECT sanasa.payment.p_invoice_no, sanasa.payment.loan_id, sanasa.payment.loan_type, sanasa.payment.p_amount, sanasa.payment.p_method, sanasa.payment.late_fee, sanasa.payment.p_date FROM sanasa.payment WHERE sanasa.payment.nic = $P{nic}]]>
+	</queryString>
+	<field name="p_invoice_no" class="java.lang.String"/>
+	<field name="loan_id" class="java.lang.String"/>
+	<field name="loan_type" class="java.lang.String"/>
+	<field name="p_amount" class="java.math.BigDecimal"/>
+	<field name="p_method" class="java.lang.String"/>
+	<field name="late_fee" class="java.math.BigDecimal"/>
+	<field name="p_date" class="java.sql.Date"/>
+	<columnHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="2c0a100d-a3fb-4cc3-b7ce-b549bcebe9f9"/>
+				<text><![CDATA[Invoice No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="30" uuid="aae122fa-8e1d-4611-823f-0a1f4125612b"/>
+				<text><![CDATA[Loan ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="30" uuid="f5f39563-283a-403a-8689-69d52cc04f10"/>
+				<text><![CDATA[Loan Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="30" uuid="5f7817a0-46fd-49a1-9795-33e28cb69c7d"/>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="30" uuid="c8b0ec96-d206-4279-aa1a-52ce5d39b146"/>
+				<text><![CDATA[Payment Method]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="30" uuid="a6f6e00f-e18e-4b7b-a87f-2a61307d9cc2"/>
+				<text><![CDATA[Late Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="30" uuid="90d0e73b-3fe2-4fad-80d9-49532797701b"/>
+				<text><![CDATA[Payment Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="8ad4713b-dcaa-40e8-87a4-6d82f7bb40a6"/>
+				<textFieldExpression><![CDATA[$F{p_invoice_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="30" uuid="c91a2fc1-d924-42d4-b06c-d99d363eeef4"/>
+				<textFieldExpression><![CDATA[$F{loan_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="30" uuid="10550a85-cd58-46ac-aefd-40f5db40734c"/>
+				<textFieldExpression><![CDATA[$F{loan_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="30" uuid="637aa4a1-fffd-448a-a38e-2fb2769aa179"/>
+				<textFieldExpression><![CDATA[$F{p_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="30" uuid="fba77413-7ba2-4bf4-9b79-068be6070871"/>
+				<textFieldExpression><![CDATA[$F{p_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="30" uuid="4eaffa8f-98d0-4726-8e90-cc7a108ad302"/>
+				<textFieldExpression><![CDATA[$F{late_fee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="100" height="30" uuid="a369419b-d500-4a48-9b16-80ccce3dd1ce"/>
+				<textFieldExpression><![CDATA[$F{p_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

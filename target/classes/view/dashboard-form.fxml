@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="790.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.DashboardFormController">
+   <children>
+      <AnchorPane prefHeight="790.0" prefWidth="246.0">
+         <children>
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="22.0" layoutY="744.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="23.0" layoutY="687.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="21.0" layoutY="624.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="20.0" layoutY="563.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="23.0" layoutY="495.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="19.0" layoutY="437.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="19.0" layoutY="377.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="21.0" layoutY="317.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="23.0" layoutY="251.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+                  <JFXButton fx:id="btnInquiry" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="25.0" layoutY="322.0" onAction="#btnInquiryOnAction" prefHeight="40.0" prefWidth="198.0" text="Manage Inquiry" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="23.0" layoutY="256.0" onAction="#btnCustomerOnAction" prefHeight="40.0" prefWidth="198.0" text="Add Customer" textFill="#fff8f8">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+
+            </JFXButton>
+            <JFXButton fx:id="btnInterestRate" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="19.0" layoutY="499.0" onAction="#btnInterestRateOnAction" prefHeight="40.0" prefWidth="198.0" text="New Loan" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnEmployee" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="24.0" layoutY="440.0" onAction="#btnEmployeeOnAction" prefHeight="40.0" prefWidth="198.0" text="Manage Employee" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPayment" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="24.0" layoutY="569.0" onAction="#btnPaymentOnAction" prefHeight="40.0" prefWidth="198.0" text="Manage Payment" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnReminder" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="24.0" layoutY="693.0" onAction="#btnReminderOnAction" prefHeight="40.0" prefWidth="198.0" text="Send Reminder" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnBalance" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="24.0" layoutY="745.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnBalanceOnAction" prefHeight="40.0" prefWidth="198.0" text="Check Balance" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+
+                  <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="40.0" layoutY="255.0">
+               <image>
+                  <Image url="@../image/icons8-customers-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="34.0" layoutY="501.0" opacity="0.81">
+               <image>
+                  <Image url="@../image/icons8-percentage-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="31.0" layoutY="443.0" opacity="0.55">
+               <image>
+                  <Image url="@../image/icons8-management-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="35.0" layoutY="569.0">
+               <image>
+                  <Image url="@../image/icons8-payment-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="34.0" layoutY="754.0" opacity="0.64">
+               <image>
+                  <Image url="@../image/icons8-balance-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="33.0" layoutY="696.0" opacity="0.59">
+               <image>
+                  <Image url="@../image/icons8-reminder-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="35.0" layoutY="323.0" opacity="0.73">
+               <image>
+                  <Image url="@../image/icons8-inquiry-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnAccount" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="23.0" layoutY="629.0" onAction="#btnAccountOnAction" prefHeight="40.0" prefWidth="198.0" text="Create Account" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="40.0" layoutY="633.0" opacity="0.74">
+               <image>
+                  <Image url="@../image/icons8-ledger-64.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLoan" alignment="TOP_RIGHT" buttonType="RAISED" layoutX="19.0" layoutY="384.0" onAction="#btnLoanOnAction" prefHeight="40.0" prefWidth="198.0" text="Get Loan" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="38.0" layoutY="383.0" opacity="0.66">
+               <image>
+                  <Image url="@../image/icons8-bank-building-50.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="MULTIPLY" fitHeight="101.0" fitWidth="180.0" layoutX="32.0" layoutY="29.0">
+               <image>
+                  <Image url="@../image/sanasa-logos.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#0984e3" height="40.0" layoutX="23.0" layoutY="186.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <JFXButton fx:id="btnDashboard" buttonType="RAISED" layoutX="43.0" layoutY="189.0" onAction="#btnDashboardOnAction" prefHeight="30.0" prefWidth="167.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="node" layoutX="246.0" prefHeight="702.0" prefWidth="1174.0">
+         <children>
+            <ImageView fitHeight="790.0" fitWidth="1300.0" layoutX="-4.0" layoutY="1.0">
+               <image>
+                  <Image url="@../image/gradient-white-monochrome-background_23-2149001474.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#788a99" height="31.0" layoutX="1014.0" layoutY="15.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="130.0" />
+
+
+            <Label layoutX="42.0" layoutY="178.0" prefHeight="23.0" prefWidth="218.0" text="Welcome to sanasa bank..">
+               <font>
+                  <Font name="Cambria" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="134.0" prefHeight="31.0" prefWidth="354.0" text="Hello.. Have a nice Day To You.." textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="41.0" layoutY="81.0" onDragDetected="#lblDateOnAction" text="YYYY-MM-DD" textFill="#59bf2a">
+               <font>
+                  <Font name="Cambria Bold Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="43.0" text="Today" textFill="#ff9700">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#a29bfe" height="202.0" layoutX="518.0" layoutY="289.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#ff7675" height="202.0" layoutX="999.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <ImageView fitHeight="86.0" fitWidth="90.0" layoutX="577.0" layoutY="324.0">
+               <image>
+                  <Image url="@../image/web-testimonial-design_23-2147951311.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="90.0" layoutX="1058.0" layoutY="322.0">
+               <image>
+                  <Image url="@../image/flat-project-management-concept_23-2147785181.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="568.0" layoutY="427.0" prefHeight="30.0" prefWidth="122.0" text="Customer Count" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCustomerCount" layoutX="616.0" layoutY="453.0" prefHeight="31.0" prefWidth="25.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="1046.0" layoutY="420.0" prefHeight="30.0" prefWidth="130.0" text="Employee Count" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmployeeCount" layoutX="1102.0" layoutY="447.0" prefHeight="31.0" prefWidth="25.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCreateAccount" buttonType="RAISED" layoutX="1040.0" layoutY="14.0" onAction="#btnCreateAccountOnAction" prefHeight="31.0" prefWidth="108.0" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#55e6c1" height="202.0" layoutX="88.0" layoutY="295.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <Label layoutX="151.0" layoutY="422.0" prefHeight="30.0" prefWidth="90.0" text="Inquiries" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInquiryCount" layoutX="176.0" layoutY="450.0" prefHeight="31.0" prefWidth="25.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="246.0" prefHeight="18.0" prefWidth="142.0" text="This Week Inquiries " textFill="RED">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="264.0" prefHeight="18.0" prefWidth="207.0" text=" Give Quik Response For Them" textFill="RED">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView blendMode="DARKEN" fitHeight="125.0" fitWidth="130.0" layoutX="132.0" layoutY="296.0">
+               <image>
+                  <Image url="@../image/modern-question-mark-symbol-template-with-chat-box-design-vector_1017-48022.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="1000.0" arcWidth="40.0" fill="#788a99" height="31.0" layoutX="1162.0" layoutY="15.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="114.0" />
+            <JFXButton fx:id="btnSignOut" buttonType="RAISED" layoutX="1187.0" layoutY="15.0" onAction="#btnSignOutOnAction" prefHeight="32.0" prefWidth="82.0" text="Sign out" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="1173.0" layoutY="17.0">
+               <image>
+                  <Image url="@../image/icons8-logout-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="19.0" layoutX="1037.0" layoutY="18.0">
+               <image>
+                  <Image url="@../image/icons8-customers-50.png" />
+               </image>
+            </ImageView>
+
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

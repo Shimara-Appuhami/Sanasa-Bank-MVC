@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1300.0" style="-fx-background-color: #BBE2EC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.CustomerFormController">
+    <children>
+        <ImageView fitHeight="790.0" fitWidth="1300.0" layoutX="-9.0">
+            <image>
+                <Image url="@../image/gradient-white-monochrome-background_23-2149001474.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="466.0" layoutY="29.0" prefHeight="30.0" prefWidth="209.0" text="Customer Form" textFill="#282e33">
+            <font>
+                <Font name="Cambria Italic" size="22.0" />
+            </font>
+        </Label>
+        <Line endX="51.4000244140625" endY="7.62939453125E-6" layoutX="594.0" layoutY="64.0" startX="-100.0" stroke="#283138" strokeWidth="5.0" />
+
+        <Label layoutX="156.0" layoutY="208.0" prefHeight="30.0" prefWidth="75.0" text="Name">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="540.0" layoutY="164.0" prefHeight="30.0" prefWidth="86.0" text="Email">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="541.0" layoutY="207.0" prefHeight="30.0" prefWidth="85.0" text="Contact">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="156.0" layoutY="248.0" prefHeight="30.0" prefWidth="97.0" text="Address" textFill="#0d0d0d">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="299.0" layoutY="210.0" onAction="#txtSearchOnAction" onKeyReleased="#txtNameOnKeyReleased" />
+        <TextField fx:id="txtEmail" layoutX="692.0" layoutY="169.0" onAction="#txtEmailOnAction" onKeyReleased="#txtEmailOnKeyReleased" promptText="name@gmail.com" />
+        <TextField fx:id="txtContact" layoutX="691.0" layoutY="209.0" onAction="#txtContactOnAction" onKeyReleased="#txtContactOnKeyReleased" promptText="07XXXXXXXX" />
+        <TextField fx:id="txtAddress" layoutX="299.0" layoutY="251.0" onAction="#txtAddressOnAction" promptText="address" />
+        <TableView fx:id="tblCustomer" layoutX="144.0" layoutY="386.0" prefHeight="186.0" prefWidth="845.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="48.79998588562012" style="-fx-background-color: #487eb0;" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="57.5999755859375" style="-fx-background-color: #d2dae2;" text="Name" />
+                <TableColumn fx:id="colEmail" prefWidth="100.80000305175781" style="-fx-background-color: #d2dae2;" text="Email" />
+                <TableColumn fx:id="colContact" prefWidth="88.79998779296875" style="-fx-background-color: #d2dae2;" text="Contact" />
+                <TableColumn fx:id="colAddress" prefWidth="85.60003662109375" style="-fx-background-color: #d2dae2;" text="Address" />
+                <TableColumn fx:id="colAge" prefWidth="68.0" style="-fx-background-color: #d2dae2;" text="Age" />
+                <TableColumn fx:id="colBirth" prefWidth="96.0" style="-fx-background-color: #d2dae2;" text="Date of Birth" />
+                <TableColumn fx:id="colRegistration" prefWidth="100.79998779296875" style="-fx-background-color: #d2dae2;" text="Regisration Date" />
+                <TableColumn fx:id="colIncome" prefWidth="92.800048828125" style="-fx-background-color: #d2dae2;" text="Annual Income" />
+                <TableColumn fx:id="colNic" prefWidth="100.800048828125" style="-fx-background-color: #e84118;" text="NIC" />
+            </columns>
+        </TableView>
+        <Label layoutX="156.0" layoutY="325.0" prefHeight="30.0" prefWidth="97.0" text="Age">
+
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAge" layoutX="299.0" layoutY="328.0" onAction="#txtAgeOnAction" onKeyReleased="#txtAgeOnKeyReleased" promptText="age" />
+        <Label layoutX="156.0" layoutY="123.0" prefHeight="30.0" prefWidth="75.0" text="ID">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="150.0" layoutY="286.0" prefHeight="30.0" prefWidth="86.0" text="Date of Birth">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtId" blendMode="MULTIPLY" layoutX="299.0" layoutY="126.0" onAction="#txtSearchOnAction" onKeyReleased="#txtIdOnKeyReleased" promptText="C0X" />
+        <Label layoutX="539.0" layoutY="248.0" prefHeight="30.0" prefWidth="110.0" text="Annual Income">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="539.0" layoutY="286.0" onKeyReleased="#txtRegisterDateOnKeyReleased" prefHeight="30.0" prefWidth="150.0" text="Regisration Date">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="156.0" layoutY="167.0" prefHeight="30.0" prefWidth="110.0" text="National ID Card">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNic" blendMode="MULTIPLY" layoutX="299.0" layoutY="167.0" onAction="#txtSearchOnAction" onKeyReleased="#txtNicOnKeyReleased" promptText="XXXXXXXXXXXXXX" />
+        <TextField fx:id="txtIncome" layoutX="692.0" layoutY="251.0" onAction="#txtIncomeOnAction" promptText="0.00" />
+
+        <JFXButton fx:id="btnPrintBill" buttonType="RAISED" layoutX="1050.0" layoutY="381.0" onAction="#btnPrintBillOnAction" prefHeight="30.0" prefWidth="75.0" ripplerFill="BLACK" style="-fx-background-color: #e12463; -fx-border-color: #e12463;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold Italic" size="16.0" />
+         </font></JFXButton>
+
+        <JFXButton buttonType="RAISED" layoutX="1050.0" layoutY="481.0" onAction="#btnSaveOnAction" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: #30336b; -fx-border-color: #30336b; -fx-text-fill: white;" text="Add">
+            <font>
+                <Font name="Cambria Bold Italic" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="1050.0" layoutY="531.0" onAction="#btnUpdateOnAction" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: #30336b; -fx-text-fill: white; -fx-border-color: #30336b;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold Italic" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="1050.0" layoutY="581.0" onAction="#btnDeleteOnAction" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: #f53b57; -fx-text-fill: white; -fx-border-color: #f53b57;" text="Delete">
+            <font>
+                <Font name="Cambria Bold Italic" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></JFXButton>
+      <DatePicker fx:id="txtBirth" layoutX="298.0" layoutY="288.0" onAction="#txtBirthOnAction" prefHeight="26.0" prefWidth="150.0" />
+      <DatePicker fx:id="txtRegistration" layoutX="693.0" layoutY="288.0" onAction="#txtRegistrationOnAction" prefHeight="26.0" prefWidth="150.0" />
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="1050.0" layoutY="430.0" onAction="#btnClearOnAction" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: #30336b; -fx-border-color: #30336b; -fx-text-fill: white;" text="Clear">
+         <font>
+            <Font name="Cambria Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="imgPhotoOnAction" layoutX="1048.0" layoutY="151.0" text="Add Photo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="imgPhoto" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="121.0" layoutX="1036.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.PaymentDetailController">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="704.0" fitWidth="1162.0" layoutX="-3.0" opacity="0.32">
+         <image>
+            <Image url="@../image/sanasa-logos.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="488.0" layoutY="33.0" text="Payment Details" textFill="#313738">
+         <font>
+            <Font name="Cambria Italic" size="26.0" />
+         </font></Label>
+
+      <TableView fx:id="tblPaymentDetails" layoutX="240.0" layoutY="295.0" prefHeight="241.0" prefWidth="694.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="colInvoice" prefWidth="75.0" style="-fx-background-color: #487eb0;" text="Invoice " />
+          <TableColumn fx:id="colLoanId" prefWidth="75.0" style="-fx-background-color: #487eb0;" text="Loan ID" />
+            <TableColumn fx:id="colLoanType" prefWidth="128.0" style="-fx-background-color: #d2dae2;" text="Loan Type" />
+            <TableColumn fx:id="colAmount" prefWidth="112.0" style="-fx-background-color: #d2dae2;" text="Amount" />
+            <TableColumn fx:id="colPaymentMethod" prefWidth="116.79998779296875" style="-fx-background-color: #d2dae2;" text="Payment Method" />
+            <TableColumn fx:id="colLateFee" prefWidth="87.20001220703125" style="-fx-background-color: #d2dae2;" text="Late Fee" />
+            <TableColumn fx:id="colDate" prefWidth="101.5999755859375" style="-fx-background-color: #d2dae2;" text="Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNic" layoutX="239.0" layoutY="249.0" onAction="#txtNicOnAction" prefHeight="26.0" prefWidth="238.0" onKeyReleased="#txtNicOnKeyReleased" promptText="Enter NIC ">
+         <font>
+            <Font name="Cambria Italic" size="13.0" />
+         </font></TextField>
+      <Label layoutX="239.0" layoutY="211.0" text="National ID Number">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="589.0" layoutY="74.0" startX="-105.79998779296875" startY="7.62939453125E-6" stroke="#3f4548" strokeWidth="5.0" />
+
+       <JFXButton buttonType="RAISED" layoutX="794.0" layoutY="568.0" onAction="#btnPrintBillOnAction" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #FF0080; -fx-border-color: #FF0080;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </JFXButton>
+
+   </children>
+</AnchorPane>

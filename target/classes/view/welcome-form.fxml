@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="node" prefHeight="364.0" prefWidth="678.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.WelcomeController">
+    <children>
+        <ProgressBar fx:id="progressBar" layoutY="344.0" prefHeight="19.0" prefWidth="678.0" progress="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="344.0" />
+      <Label layoutX="271.0" layoutY="7.0" prefHeight="43.0" prefWidth="154.0" text="WELCOME ">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="85.0" fitWidth="131.0" layoutX="533.0" layoutY="257.0">
+         <image>
+            <Image url="@../image/hands-making-chalice-gesture_1301-2872.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ball1" layoutY="286.0">
+         <image>
+            <Image url="@../image/icons8-coin-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLoan" fitHeight="207.0" fitWidth="428.0" layoutX="130.0" layoutY="54.0">
+         <image>
+            <Image url="@../image/sanasa-logos.png" />
+         </image>
+      </ImageView>
+
+    </children>
+</AnchorPane>
